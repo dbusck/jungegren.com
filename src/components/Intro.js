@@ -4,7 +4,7 @@ import Container from './Container';
 import Title from './Title';
 
 const lines = [
-  { text: 'Philip', align: 'left', margin: ' 0 0 0 2rem' },
+  { text: 'Philip', align: 'left', margin: ' 0 0 0 1rem' },
   { text: 'Jungegren', align: 'left', margin: '0 0 0 4rem' },
   { text: 'is a multi-disciplinary', align: 'left', margin: '0' },
   { text: 'designer working in', align: 'right', margin: '0 2rem 0 0' },
