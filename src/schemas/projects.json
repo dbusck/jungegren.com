@@ -1,0 +1,121 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Slug"
+      }
+    },
+    "hero_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1440,
+          "height": 744
+        },
+        "thumbnails": [],
+        "label": "Hero image"
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "subtitle": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Subtitle"
+      }
+    },
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading3, heading4, heading5, heading6, strong, em, hyperlink, list-item, o-list-item",
+        "label": "Text"
+      }
+    },
+    "gallery": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 1440,
+                "height": 743
+              },
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "fullwidth": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Full-width"
+            }
+          },
+          "video": {
+            "type": "Link",
+            "config": {
+              "select": "media",
+              "label": "Video"
+            }
+          }
+        },
+        "label": "Gallery"
+      }
+    },
+    "credits_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Credits title"
+      }
+    },
+    "credits": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "credit": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading6",
+              "label": "Credit"
+            }
+          }
+        },
+        "label": "Credits"
+      }
+    },
+    "next_project": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["projects"],
+        "label": "Next project"
+      }
+    }
+  },
+  "Homepage": {
+    "homepage_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "homepage_subtitle": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Subtitle"
+      }
+    }
+  }
+}

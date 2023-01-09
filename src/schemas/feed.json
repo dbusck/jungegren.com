@@ -1,0 +1,101 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "column1": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1",
+              "label": "Title"
+            }
+          },
+          "text": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph",
+              "label": "Text"
+            }
+          },
+          "video": {
+            "type": "Link",
+            "config": {
+              "select": "media",
+              "label": "Video"
+            }
+          },
+          "linked_project": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["projects"],
+              "label": "Linked project"
+            }
+          }
+        },
+        "label": "Left column"
+      }
+    },
+    "column2": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "title1": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1",
+              "label": "Title"
+            }
+          },
+          "text": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph",
+              "label": "Text"
+            }
+          },
+          "video": {
+            "type": "Link",
+            "config": {
+              "select": "media",
+              "label": "Video"
+            }
+          },
+          "linked_project": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["projects"],
+              "label": "Linked project"
+            }
+          }
+        },
+        "label": "Right column"
+      }
+    }
+  }
+}

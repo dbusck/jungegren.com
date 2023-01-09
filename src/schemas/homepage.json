@@ -1,0 +1,105 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "hero_text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Hero text"
+      }
+    },
+    "projects_list": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "project": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["projects"],
+              "label": "Project"
+            }
+          }
+        },
+        "label": "Projects list"
+      }
+    },
+    "about_title1": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "About title (1/2)"
+      }
+    },
+    "about_title2": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "About title (2/2)"
+      }
+    },
+    "about_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": null,
+          "height": null
+        },
+        "thumbnails": [],
+        "label": "About image"
+      }
+    },
+    "about_list1": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "list_item": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading6",
+              "label": "List item"
+            }
+          }
+        },
+        "label": "About list 1"
+      }
+    },
+    "about_list2": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "list_item": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading6",
+              "label": "List item"
+            }
+          }
+        },
+        "label": "About list 2"
+      }
+    },
+    "about_text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading3, heading4, heading5, heading6, strong, em, hyperlink, list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "About text"
+      }
+    },
+    "about_footnote": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
+        "label": "About footnote"
+      }
+    }
+  }
+}
