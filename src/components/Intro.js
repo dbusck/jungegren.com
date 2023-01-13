@@ -7,8 +7,8 @@ const lines = [
   { text: 'Philip', align: 'left', margin: ' 0 0 0 2rem' },
   { text: 'Jungegren', align: 'left', margin: '0 0 0 4rem' },
   { text: 'is a Digital designer', align: 'left', margin: '0' },
-  { text: 'specializing in,', align: 'right', margin: '0 2 0 0' },
-  { text: 'ecommerce, focusing on', align: 'right', margin: '0 4rem 0 0' },
+  { text: 'working with ecommerce,', align: 'right', margin: '0 2 0 0' },
+  { text: 'specializing on creating', align: 'right', margin: '0 4rem 0 0' },
   { text: 'creating great UX', align: 'right', margin: '0' },
   { text: 'that converts', align: 'right', margin: '0 3rem 0 0' },
 ];
