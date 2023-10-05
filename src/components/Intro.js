@@ -9,7 +9,7 @@ const lines = [
   { text: 'is a Digital designer', align: 'left', margin: '0' },
   { text: 'working with ecommerce,', align: 'right', margin: '0 2 0 0' },
   { text: 'specializing on creating', align: 'right', margin: '0 4rem 0 0' },
-  { text: 'creating great UX', align: 'right', margin: '0' },
+  { text: 'great UX', align: 'right', margin: '0' },
   { text: 'that converts', align: 'right', margin: '0 3rem 0 0' },
 ];
 
