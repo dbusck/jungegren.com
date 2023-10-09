@@ -44,7 +44,12 @@ const FeedPage = ({ data }) => {
           <Column half>
             {column1.map(item => (
               <FeedItem
-                key={item.image.fluid ? item.image.fluid.src : item.video.url}
+                key={
+                  item.linked_project?.id ||
+                  item.image?.src ||
+                  item.video?.url ||
+                  item.title
+                }
                 item={item}
               />
             ))}
@@ -62,7 +67,12 @@ const FeedPage = ({ data }) => {
             >
               {column2.map(item => (
                 <FeedItem
-                  key={item.image.fluid ? item.image.fluid.src : item.video.url}
+                  key={
+                    item.linked_project?.id ||
+                    item.image?.url ||
+                    item.video?.url ||
+                    item.title
+                  }
                   item={item}
                 />
               ))}
@@ -82,9 +92,8 @@ export const FEED_QUERY = graphql`
       data {
         column1 {
           image {
-            fluid(maxWidth: 600) {
-              ...GatsbyPrismicImageFluid
-            }
+            url
+            gatsbyImageData(width: 600, layout: CONSTRAINED)
           }
           video {
             url
@@ -106,9 +115,8 @@ export const FEED_QUERY = graphql`
         }
         column2 {
           image {
-            fluid(maxWidth: 600) {
-              ...GatsbyPrismicImageFluid
-            }
+            url
+            gatsbyImageData(width: 600, layout: CONSTRAINED)
           }
           video {
             url

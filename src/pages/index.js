@@ -64,9 +64,7 @@ export const HOMEPAGE_QUERY = graphql`
           html
         }
         about_image {
-          fluid(maxWidth: 500) {
-            ...GatsbyPrismicImageFluid
-          }
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
         about_list1 {
           list_item {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image/withIEPolyfill';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import Title from './Title';
 import Container from './Container';
@@ -22,7 +22,7 @@ const List = styled.ul`
   }
 `;
 
-const StyledImg = styled(Img)`
+const StyledImg = styled(GatsbyImage)`
   width: 100%;
 `;
 
@@ -58,7 +58,7 @@ const About = ({ title, image, text, list1, list2, footnote }) => {
             <Footnote dangerouslySetInnerHTML={{ __html: footnote }} />
           </Column>
           <Column>
-            <StyledImg fluid={image.fluid} />
+            <StyledImg image={image.gatsbyImageData} />
           </Column>
         </Columns>
       </Container>

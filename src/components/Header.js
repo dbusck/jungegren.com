@@ -65,7 +65,7 @@ const Header = ({ headerFixed, color }) => {
           {content.header_left.map(item => (
             <NavItem
               as={isExternal(item.item_link.slug) && 'a'}
-              key={item.item_title[0].text}
+              key={item.item_title.text}
               color={color}
               to={
                 isHomepage(item.item_link.type)
@@ -73,7 +73,7 @@ const Header = ({ headerFixed, color }) => {
                   : `/${item.item_link.slug}`
               }
             >
-              {item.item_title[0].text}
+              {item.item_title.text}
             </NavItem>
           ))}
         </div>
@@ -81,7 +81,7 @@ const Header = ({ headerFixed, color }) => {
           {content.header_right.map(item => (
             <NavItem
               as={isExternal(item.item_link.slug) && 'a'}
-              key={item.item_title[0].text}
+              key={item.item_title.text}
               color={color}
               to={
                 isHomepage(item.item_link.type)
@@ -89,7 +89,7 @@ const Header = ({ headerFixed, color }) => {
                   : `/${item.item_link.slug}`
               }
             >
-              {item.item_title[0].text}
+              {item.item_title.text}
             </NavItem>
           ))}
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Img from 'gatsby-image/withIEPolyfill';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Title from './Title';
 
 const Wrapper = styled.div`
@@ -32,7 +32,9 @@ const Content = styled.div`
 
 const FeedItemContent = ({ hasImage, hasVideo, item }) => (
   <>
-    {hasImage && <Img width="100%" fluid={item.image.fluid} />}
+    {hasImage && (
+      <GatsbyImage image={item.image.gatsbyImageData} width="100%" />
+    )}
     {hasVideo && (
       <div
         dangerouslySetInnerHTML={{
@@ -52,9 +54,9 @@ const FeedItemContent = ({ hasImage, hasVideo, item }) => (
 );
 
 const FeedItem = ({ item }) => {
-  const hasImage = item.image.fluid;
-  const hasVideo = item.video.url.length > 0;
-  const hasLink = item.linked_project.document;
+  const hasImage = item.image?.gatsbyImageData;
+  const hasVideo = item.video?.url.length > 0;
+  const hasLink = item.linked_project?.document;
 
   return (
     <Wrapper>

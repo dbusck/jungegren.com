@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image/withIEPolyfill';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Container from '../components/Container';
 
 const GalleryItem = styled.div`
@@ -21,12 +21,12 @@ const Gallery = ({ items }) => {
   return (
     <section>
       {items.map(item => {
-        const hasImage = item.image.fluid;
-        const hasVideo = item.video.url.length > 0;
+        const hasImage = item.image.gatsbyImageData;
+        const hasVideo = item.video?.url.length > 0;
         return (
-          <GalleryItem key={hasImage ? item.image.fluid.src : item.video.url}>
+          <GalleryItem key={hasImage ? item.image.url : item.video.url}>
             <StyledContainer fullWidth={item.fullwidth}>
-              {hasImage && <Img fluid={item.image.fluid} />}
+              {hasImage && <GatsbyImage image={item.image.gatsbyImageData} />}
               {hasVideo && (
                 <div
                   dangerouslySetInnerHTML={{

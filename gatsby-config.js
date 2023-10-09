@@ -21,13 +21,16 @@ module.exports = {
           homepage: require('./src/schemas/homepage.json'),
           projects: require('./src/schemas/projects.json'),
           feed: require('./src/schemas/feed.json'),
+          globals: require('./src/schemas/globals.json'),
+          globlas: {},
         },
         // linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     'gatsby-plugin-styled-components',
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

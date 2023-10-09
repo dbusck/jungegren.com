@@ -78,7 +78,7 @@ const Footer = ({ color }) => {
     <Wrapper>
       <Container>
         <Title italic medium>
-          {content.footer_title[0].text}
+          {content.footer_title.text}
         </Title>
         <Nav>
           {content.footer.map(item => {
@@ -95,7 +95,7 @@ const Footer = ({ color }) => {
                   target={item.item_link.target && item.item_link.target}
                   color="black"
                 >
-                  {item.item_title[0].text}
+                  {item.item_title.text}
                 </NavItem>
               </div>
             );

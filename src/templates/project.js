@@ -118,16 +118,12 @@ export const PROJECT_QUERY = graphql`
           text
         }
         hero_image {
-          fluid(maxWidth: 1920) {
-            ...GatsbyPrismicImageFluid
-          }
+          gatsbyImageData(width: 1920, layout: CONSTRAINED)
         }
         gallery {
           fullwidth
           image {
-            fluid(maxWidth: 1920) {
-              ...GatsbyPrismicImageFluid
-            }
+            gatsbyImageData(width: 1920, layout: CONSTRAINED)
           }
           video {
             url
