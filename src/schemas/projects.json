@@ -9,10 +9,7 @@
     "hero_image": {
       "type": "Image",
       "config": {
-        "constraint": {
-          "width": 1440,
-          "height": 744
-        },
+        "constraint": {},
         "thumbnails": [],
         "label": "Hero image"
       }

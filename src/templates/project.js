@@ -53,7 +53,9 @@ const project = ({ data }) => {
   return (
     <Layout headerFixed>
       <SEO title={content.title.text} description={content.subtitle.text} />
-      {content.hero_image.fluid && <Hero full image={content.hero_image} />}
+      {content.hero_image.gatsbyImageData && (
+        <Hero full image={content.hero_image} />
+      )}
       <Container as="article">
         <StyledTitle italic as="h1">
           {content.title.text}
@@ -118,7 +120,7 @@ export const PROJECT_QUERY = graphql`
           text
         }
         hero_image {
-          gatsbyImageData(width: 1920, layout: CONSTRAINED)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
         gallery {
           fullwidth
