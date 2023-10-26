@@ -44,7 +44,7 @@ const Text = styled.div`
     margin: 0;
     position: absolute;
     left: 0;
-    bottom: 24rem;
+    bottom: 16rem;
     font-size: 1.4rem;
   }
 `;
