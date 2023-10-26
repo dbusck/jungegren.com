@@ -8,8 +8,8 @@ const lines = [
   { text: 'Jungegren', align: 'left', margin: '0 0 0 4rem' },
   { text: 'is a Digital designer', align: 'left', margin: '0' },
   { text: 'specializing in e-commerce,', align: 'right', margin: '0 2 0 0' },
-  { text: 'and user experience', align: 'right', margin: '0 4rem 0 0' },
-  { text: 'design that engage users', align: 'right', margin: '0' },
+  { text: '& user experience design', align: 'right', margin: '0 4rem 0 0' },
+  { text: 'that engage users', align: 'right', margin: '0' },
   { text: 'and drive results', align: 'right', margin: '0 3rem 0 0' },
 ];
 
