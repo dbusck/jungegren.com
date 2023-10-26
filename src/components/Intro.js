@@ -7,10 +7,10 @@ const lines = [
   { text: 'Philip', align: 'left', margin: ' 0 0 0 2rem' },
   { text: 'Jungegren', align: 'left', margin: '0 0 0 4rem' },
   { text: 'is a Digital designer', align: 'left', margin: '0' },
-  { text: 'specializing in e-commerce design,', align: 'right', margin: '0 2 0 0' },
-  { text: 'with a focus on', align: 'right', margin: '0 4rem 0 0' },
-  { text: 'crafting user-experiences', align: 'right', margin: '0' },
-  { text: 'that converts', align: 'right', margin: '0 3rem 0 0' },
+  { text: 'specializing in e-commerce,', align: 'right', margin: '0 2 0 0' },
+  { text: 'and user experience', align: 'right', margin: '0 4rem 0 0' },
+  { text: 'design that engage users', align: 'right', margin: '0' },
+  { text: 'and drive results', align: 'right', margin: '0 3rem 0 0' },
 ];
 
 const StyledContainer = styled(Container)`
