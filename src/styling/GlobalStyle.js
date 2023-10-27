@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
     overflow: auto;
     font-size: 1.6rem;
     font-family: ${({ theme }) => theme.fontFamily};
-    background-color: #FFE2BF;
+    background-color: #FFEDD9;
     color: ${({ theme }) => theme.textColor};
   }
 
