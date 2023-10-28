@@ -53,6 +53,16 @@ const ListItem = styled.li`
   }
 `;
 
+const getItemUrl = link => {
+  switch (link.link_type) {
+    case 'Web':
+      return link.url;
+    case 'Document':
+    default:
+      return `/${link.document?.uid}`;
+  }
+};
+
 const Projects = ({ projects }) => {
   const [isHovering, setIsHovering] = useState(false);
 
@@ -63,18 +73,19 @@ const Projects = ({ projects }) => {
           Featured projects
         </Title>
         <List>
-          {projects.map(project => {
-            const { id, uid, data } = project.project.document;
+          {projects.map((project, i) => {
+            const { link_title, link_subtitle, link_url } = project;
+            const linkUri = getItemUrl(link_url);
             return (
               <ListItem
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
                 isHovering={isHovering}
-                key={id}
+                key={i}
               >
-                <Link to={`/${uid}`}>
-                  <span>→{data.homepage_title.text}</span>
-                  <span> {data.homepage_subtitle.text} </span>
+                <Link to={linkUri} target={link_url.target}>
+                  <span>→{link_title.text}</span>
+                  <span> {link_subtitle.text} </span>
                 </Link>
               </ListItem>
             );

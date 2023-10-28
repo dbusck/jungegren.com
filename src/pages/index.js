@@ -43,7 +43,17 @@ export const HOMEPAGE_QUERY = graphql`
           html
         }
         projects_list {
-          project {
+          link_title {
+            text
+          }
+          link_subtitle {
+            text
+          }
+          link_url {
+            type
+            link_type
+            url
+            target
             document {
               ... on PrismicProjects {
                 id

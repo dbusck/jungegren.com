@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: '.env',
+});
+
 module.exports = {
   siteMetadata: {
     title: `Philip Jungegren`,
@@ -17,13 +21,14 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: 'philip-portfolio',
-        schemas: {
-          homepage: require('./src/schemas/homepage.json'),
-          projects: require('./src/schemas/projects.json'),
-          feed: require('./src/schemas/feed.json'),
-          globals: require('./src/schemas/globals.json'),
-          globlas: {},
-        },
+        customTypesApiToken: process.env.PRISMIC_CUSTOM_TYPES_TOKEN,
+        // schemas: {
+        //   homepage: require('./src/schemas/homepage.json'),
+        //   projects: require('./src/schemas/projects.json'),
+        //   feed: require('./src/schemas/feed.json'),
+        //   globals: require('./src/schemas/globals.json'),
+        //   globlas: {},
+        // },
         // linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
       },
     },
