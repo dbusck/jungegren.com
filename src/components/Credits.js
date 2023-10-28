@@ -8,7 +8,7 @@ const List = styled.ul`
   margin: 1.6rem 0 0;
 
   @media (${({ theme }) => theme.respondTo.desktop}) {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 4rem 0 0;
     opacity: 0.5;
   }
