@@ -58,8 +58,9 @@ const About = ({ title, image, text, list1, list2, footnote }) => {
             <Footnote dangerouslySetInnerHTML={{ __html: footnote }} />
           </Column>
           <Column>
-            <StyledImg image={image.gatsbyImageData} 
-            style={{ borderRadius: '16px' }} // Adding rounded corners
+          <StyledImg
+              image={image.gatsbyImageData}
+              style={{ borderRadius: '10px' }} // Adding rounded corners
             />
           </Column>
         </Columns>
