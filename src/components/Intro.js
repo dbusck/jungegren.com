@@ -10,7 +10,8 @@ const lines = [
   { text: 'specialising in', align: 'right', margin: '0 1rem 0 0' },
   { text: 'e-commerce &', align: 'right', margin: '0 0 0 0' },
   { text: 'UX that engage', align: 'right', margin: '0' },
-  { text: 'users & drive results', align: 'right', margin: '0 0 0 0' },
+  { text: 'users &', align: 'right', margin: '0 0 0 0' },
+  { text: 'drive results', align: 'right', margin: '0 0 0 0' },
 ];
 
 const StyledContainer = styled(Container)`
