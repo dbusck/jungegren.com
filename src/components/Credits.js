@@ -10,6 +10,7 @@ const List = styled.ul`
   @media (${({ theme }) => theme.respondTo.desktop}) {
     font-size: 2rem;
     margin: 4rem 0 0;
+    opacity: 0.5;
   }
 `;
 
