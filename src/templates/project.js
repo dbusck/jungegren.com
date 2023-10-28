@@ -85,7 +85,7 @@ const project = ({ data }) => {
               />
             )}
           </Column>
-          {content.next_project.slug && (
+          {content.next_project.slug && content.next_project.document && (
             <StyledColumn>
               <Title small as="h3" style={{ marginBottom: '8px' }}>
                 Next Project
