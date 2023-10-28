@@ -59,7 +59,7 @@ const About = ({ title, image, text, list1, list2, footnote }) => {
           </Column>
           <Column>
             <StyledImg image={image.gatsbyImageData} 
-            style={{ borderRadius: '10px' }} // Adding rounded corners
+            style={{ borderRadius: '16px' }} // Adding rounded corners
             />
           </Column>
         </Columns>
