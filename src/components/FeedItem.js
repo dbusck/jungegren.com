@@ -6,7 +6,7 @@ import Title from './Title';
 
 const Wrapper = styled.div`
   width: 100%;
-  margin: 0 0 4rem;
+  margin: 0 0 10rem;
 
   @media (${({ theme }) => theme.respondTo.tablet}) {
     margin: 0 0 8rem;
