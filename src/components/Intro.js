@@ -35,7 +35,7 @@ const Line = styled.span`
 `;
 
 const Text = styled.div`
-  max-width: 22rem;
+  max-width: 28rem;
   font-size: 1.2rem;
   line-height: 1.43;
   margin: 4rem 0 0;
