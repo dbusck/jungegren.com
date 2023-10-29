@@ -70,7 +70,7 @@ const Projects = ({ projects }) => {
     <Wrapper>
       <Container as="section">
         <Title italic medium>
-          Featured collaborations
+          Featured projects
         </Title>
         <List>
           {projects.map((project, i) => {
