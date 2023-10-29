@@ -4,7 +4,7 @@ export const Columns = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 14rem 0;
+  margin: 4rem 0;
 `;
 
 export const Column = styled.div`
