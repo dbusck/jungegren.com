@@ -22,6 +22,25 @@ const Wrapper = styled.nav`
   }
 `;
 
+const isHomepage = type => type === 'homepage';
+const isFeed = type => type === 'feed';
+const getUrl = item => {
+  console.log(item);
+  if (isHomepage(item.item_link.type)) {
+    return '/';
+  }
+
+  if (isFeed(item.item_link.type)) {
+    return '/feed';
+  }
+
+  return `/${item.item_link.slug}`;
+};
+const isExternal = link =>
+  link.startsWith('http') ||
+  link.startsWith('www') ||
+  link.startsWith('mailto');
+
 const Header = ({ headerFixed, color }) => {
   const data = useStaticQuery(graphql`
     query header {
@@ -52,12 +71,6 @@ const Header = ({ headerFixed, color }) => {
 
   const content = data.prismicGlobals.data;
 
-  const isHomepage = type => type === 'homepage';
-  const isExternal = link =>
-    link.startsWith('http') ||
-    link.startsWith('www') ||
-    link.startsWith('mailto');
-
   return (
     <StyledHeader headerFixed={headerFixed}>
       <Wrapper>
@@ -67,11 +80,7 @@ const Header = ({ headerFixed, color }) => {
               as={isExternal(item.item_link.slug) && 'a'}
               key={item.item_title.text}
               color={color}
-              to={
-                isHomepage(item.item_link.type)
-                  ? '/'
-                  : `/${item.item_link.slug}`
-              }
+              to={getUrl(item)}
             >
               {item.item_title.text}
             </NavItem>
@@ -83,11 +92,7 @@ const Header = ({ headerFixed, color }) => {
               as={isExternal(item.item_link.slug) && 'a'}
               key={item.item_title.text}
               color={color}
-              to={
-                isHomepage(item.item_link.type)
-                  ? '/'
-                  : `/${item.item_link.slug}`
-              }
+              to={getUrl(item)}
             >
               {item.item_title.text}
             </NavItem>
