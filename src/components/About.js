@@ -28,7 +28,7 @@ const StyledImg = styled(GatsbyImage)`
 
 const Footnote = styled.div`
   margin: 4rem 0 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.43;
 `;
 
