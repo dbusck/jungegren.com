@@ -15,7 +15,7 @@ const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  padding: 3.2rem 1.6rem 3rem;
+  padding: 3.2rem 1.6rem 3.2rem;
 
   @media (${({ theme }) => theme.respondTo.desktop}) {
     padding: 3.2rem 3.2rem 4rem;
