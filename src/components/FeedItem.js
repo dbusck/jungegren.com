@@ -29,7 +29,10 @@ const Content = styled.div`
     margin: 2.4rem 0 0;
   }
 `;
-
+/* ✅ Local Title styling just for Feed */
+const FeedTitle = styled(Title)`
+  margin-bottom: 1.5rem; /* 24px */
+`;
 const FeedItemContent = ({ hasImage, hasVideo, item }) => (
   <>
     {hasImage && (
@@ -47,7 +50,7 @@ const FeedItemContent = ({ hasImage, hasVideo, item }) => (
       />
     )}
     <Content>
-      <Title small>{item.title.text}</Title>
+      <FeedTitle small>{item.title.text}</Title>
       <div dangerouslySetInnerHTML={{ __html: item.text.html }} />
     </Content>
   </>
