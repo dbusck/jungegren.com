@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
     <Layout headerFixed color="black">
       <SEO
         title="Work"
-        description="Philip Jungegren is a multi-disciplinary designer working in digital design, strategic branding and motion"
+        description="Philip Jungegren is a digital designer specialising in e-commerce and customer experiences that engage users and drive results."
       />
       <Intro text={content.hero_text.html} />
       <Projects projects={content.projects_list} />
