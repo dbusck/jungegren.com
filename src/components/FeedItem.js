@@ -50,7 +50,7 @@ const FeedItemContent = ({ hasImage, hasVideo, item }) => (
       />
     )}
     <Content>
-      <FeedTitle small>{item.title.text}</Title>
+      <FeedTitle small>{item.title.text}</FeedTitle>
       <div dangerouslySetInnerHTML={{ __html: item.text.html }} />
     </Content>
   </>
